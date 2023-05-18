@@ -1,4 +1,5 @@
 *.tpl linguist-vendored
+*.prompt_tpl linguist-vendored
 *.ps1 linguist-vendored=false
 *.psm linguist-vendored=false
 *.ps linguist-vendored=false

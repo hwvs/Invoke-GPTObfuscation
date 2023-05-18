@@ -1,6 +1,12 @@
+# This file is an interface to use Invoke-GPOObfuscation as a command line tool.
+# It is not intended to be used as a module - instead use Invoke-GPOObfuscation.psm1
+
+# Load the module
+$script_dir = Split-Path -Parent $MyInvocation.MyCommand.Path
+Import-Module "$script_dir\Invoke-GPOObfuscation.psm1"
+
 $prompt_templates = @()
 
-$script_dir = Split-Path -Parent $MyInvocation.MyCommand.Path
 Get-ChildItem -Path $script_dir -Filter "*.prompt_tpl" -File | % {
     $prompt_templates += $_.FullName
 }
