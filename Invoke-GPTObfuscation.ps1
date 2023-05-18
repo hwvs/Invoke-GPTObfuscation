@@ -1,12 +1,12 @@
 $prompt_templates = @()
 
 $script_dir = Split-Path -Parent $MyInvocation.MyCommand.Path
-Get-ChildItem -Path $script_dir -Filter "*.tpl" -File | % {
+Get-ChildItem -Path $script_dir -Filter "*.prompt_tpl" -File | % {
     $prompt_templates += $_.FullName
 }
 
 if($prompt_templates.Count -eq 0) {
-    Write-Host "[Error] No prompt templates (*.tpl) found in $script_dir" -ForegroundColor Red
+    Write-Host "[Error] No prompt templates (*.prompt_tpl) found in $script_dir" -ForegroundColor Red
     return;
 }
 
