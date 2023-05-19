@@ -95,7 +95,7 @@ Command: `./Invoke-PowershellObfuscation -Conf $config -FromStandardInput $true`
 
 STDINPUT:
 ```
-%USER_CODE%
+{{SCRIPT_INPUT}}
 ```
 * Antivirus Scan: .....**....****.....**....
 * Antivirus Scan: [Error] Fail (8 Detections)
