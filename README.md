@@ -3,6 +3,15 @@ Invoke-GPTObfuscation is a PowerShell Obfuscator that utilizes OpenAI or compati
 
 This is mostly demonstrational, and will frequently create invalid code. You'll need to come up with a better prompt to get good results. If you make any improvements, please consider submitting a pull request!
 
+With better prompt templates, or better models (GPT-4), this tool can achieve much more impressive results. I've found GPT-4 can perform impressive code mutations that completely change the structure of the code.
+
+**(TODO) Future Improvements:**
+- Convert variable names to placeholder-symbols via Regex to maintain across code (eg: $<VAR1>, $<VAR2>)
+- Validate syntax, optionally re-generate if there is a syntax error
+- Instead of building blocks line-by-line, try to build blocks by { context }
+- Add in options into the prompt that the model can try to replicate
+- Add support for other providers/API (Anthropic/Claude?)
+  
 ---
 
 ## Credits
