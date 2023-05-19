@@ -43,3 +43,19 @@ $strawBerRy.quiT();
 IeX $R
 ```
 
+---
+
+## Usage
+
+Run the CLI tool (in a powershell window): `./Invoke-GPTObfuscation.ps1`
+
+Use the module in your code
+```powershell
+# load the module however is easiest for you, eg:
+$module_path = $pwd.Path + "/Invoke-GPTObfuscation.psm1"
+Invoke-Expression (Get-Content $module_path -Raw)
+  
+#...
+
+$script_obfuscated = Invoke-GPTObfuscation -ScriptBlock $script -PromptTemplateFile $prompt_template_path -Verbose $true
+```
