@@ -170,6 +170,6 @@ if ($script_input_method -eq "P") {
 $script_obfuscated = Invoke-GPTObfuscation -ScriptBlock $script -PromptTemplateFile $prompt_template_path -Verbose $true
 
 # Output the obfuscated script
-Write-Host "Obfuscated script:"
-Write-Host $script_obfuscated
-
+Write-Host "Obfuscated script:`n`n"
+Write-Host $script_obfuscated -ForegroundColor Green
+write-host "`n"
