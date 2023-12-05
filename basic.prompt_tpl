@@ -10,7 +10,7 @@ KEEP_WHITESPACE=$true;
 RANDOM_NAME_SOURCE='fruits-words-english.txt';
 }
 
-Command: `./Invoke-PowershellObfuscation -Conf $config -FromStandardInput $true`
+Command: `./Invoke-PowershellObfuscation -Conf $config -FromStandardInput $true .`
 
 STDINPUT:
 ```
